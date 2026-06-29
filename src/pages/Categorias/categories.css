@@ -1,0 +1,200 @@
+body {
+    background-color: #f8fafc;
+}
+
+/* Container principal simulando o app mobile */
+.categories-layout {
+    max-width: 480px;
+    margin: 0 auto;
+    background-color: #ffffff; /* Fundo branco para a lista conforme o print */
+    min-height: 100vh;
+    position: relative;
+    padding-bottom: 90px;
+}
+
+/* Header superior */
+.categories-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.25rem 1rem;
+    background-color: #ffffff;
+    border-bottom: 1px solid #f1f5f9;
+}
+
+.categories-header-title {
+    color: #1e293b;
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 0;
+}
+
+.header-icon-btn {
+    color: #1e293b;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+/* Botão Nova Categoria */
+.padding-container {
+    padding: 1rem;
+    background-color: #f8fafc; /* Leve fundo cinza antes da lista começar */
+}
+
+.btn-new-category {
+    width: 100%;
+    background-color: #2ecc71;
+    color: #ffffff;
+    border: none;
+    border-radius: 12px;
+    padding: 0.75rem;
+    font-weight: 600;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    transition: background 0.2s;
+    cursor: pointer;
+}
+
+.btn-new-category:hover {
+    background-color: #27ae60;
+}
+
+/* Estrutura da Lista de Categorias */
+.categories-list {
+    background-color: #ffffff;
+    padding: 0 1rem;
+}
+
+.category-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    border-bottom: 1px solid #f1f5f9;
+}
+
+.category-item:last-child {
+    border-bottom: none;
+}
+
+.category-item-left {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+/* Círculos dos Ícones */
+.cat-icon-circle {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+}
+
+/* Cores exatas do print */
+.bg-cat-alimentacao { background-color: #fff3e0; color: #ff9800; }
+.bg-cat-moradia { background-color: #e3f2fd; color: #2196f3; }
+.bg-cat-saude { background-color: #ffebee; color: #e53935; }
+.bg-cat-transporte { background-color: #f3e5f5; color: #9c27b0; }
+.bg-cat-lazer { background-color: #fffde7; color: #fbc02d; }
+
+.category-item-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.category-item-name {
+    font-size: 16px;
+    font-weight: 700;
+    color: #1e293b;
+    margin-bottom: 2px;
+}
+
+.category-item-desc {
+    font-size: 13px;
+    color: #64748b;
+}
+
+/* Botões de Ação (Editar / Excluir) */
+.category-item-actions {
+    display: flex;
+    gap: 16px;
+    color: #64748b;
+}
+
+.action-icon-btn {
+    background: none;
+    border: none;
+    color: #64748b;
+    cursor: pointer;
+    padding: 4px;
+    display: flex;
+    align-items: center;
+    transition: color 0.2s;
+}
+
+.action-icon-btn:hover {
+    color: #1e293b;
+}
+
+/* Menu de Navegação Inferior (Mantendo o padrão solicitado) */
+.app-bottom-nav {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 480px;
+    height: 65px;
+    background-color: #ffffff;
+    border-top: 1px solid #f1f5f9;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 100;
+}
+
+.nav-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #94a3b8;
+    font-size: 11px;
+    font-weight: 500;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.nav-item-active {
+    color: #1e293b;
+}
+
+.nav-icon-wrapper-active {
+    background-color: #cbf2db;
+    color: #2ecc71;
+    padding: 4px 16px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2px;
+}
+
+.nav-icon-wrapper {
+    padding: 4px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2px;
+    font-size: 20px;
+}

@@ -1,0 +1,55 @@
+.dashboard-container {
+  display: flex;
+  min-height: 100vh;
+  background-color: #f8f9ff;
+}
+
+.sidebar {
+  width: 260px;
+  background-color: #ffffff;
+  border-right: 1px solid #dce9ff;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  flex: 1;
+  padding: 32px;
+}
+
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 32px;
+}
+
+.grid-layout {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 24px;
+}
+
+.main-card {
+  grid-column: span 8;
+}
+
+.sidebar-card {
+  grid-column: span 4;
+}
+
+/* Estilo precision para cards */
+.card-finance {
+  background-color: #ffffff;
+  border: 1px solid #dce9ff;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  box-shadow: 0px 1px 3px rgba(0,0,0,0.05);
+}
+
+.amount {
+  font-size: 28px;
+  font-weight: 700;
+  color: #0b1c30;
+  font-variant-numeric: tabular-nums;
+}
